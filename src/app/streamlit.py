@@ -1,4 +1,12 @@
 # src/app/streamlit_app.py
+
+'''
+run with 
+
+source venv/bin/activate
+streamlit run src/app/streamlit.py
+'''
+
 import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
