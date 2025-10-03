@@ -24,7 +24,7 @@ Each drone transforms its $512 \times 512$ mask into a small **$20 \times 20$ he
 2. **Density Calculation:** In each cell, the average weed pixel intensity (weed pixel count ÷ total pixel count) is computed.  
 3. **Normalization:** The cell average is normalized between 0 (no weeds) and 1 (full weeds).  
 
-**Formula for Heatmap Cell $(i, j)$:**
+### Formula for Heatmap Cell $(i, j)$
 
 $$
 \text{heatmap}[i,j] \;=\; \frac{1}{255} \cdot \frac{1}{|C_{i,j}|} 
@@ -45,14 +45,14 @@ The final farm-wide map is created using **ensemble averaging**.
 
 **Process:** We average the heatmaps from all $N$ drones that viewed a section of the field.
 
-**Formula for Farm Heatmap:**
+### Formula for Farm Heatmap
 
 $$
 \text{farm\_heatmap} \;=\; \frac{1}{N} \sum_{k=1}^{N} \text{heatmap}_k
 $$
 
 - $N$ = number of drones  
-- $\text{heatmap}_k$ = map from drone $k$  
+- $\text{heatmap}_k$ = heatmap from drone $k$  
 
 **Benefit:** Averaging multiple drones’ maps reduces noise, minimizes the impact of packet loss, and ensures the final farm-wide map is **more robust and reliable** — similar to averaging repeated measurements in science experiments.
 
