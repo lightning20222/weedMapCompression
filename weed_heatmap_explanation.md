@@ -48,7 +48,7 @@ The final farm-wide map is created using **ensemble averaging**.
 ### Formula for Farm Heatmap
 
 $$
-\text{farm\_heatmap} \;=\; \frac{1}{N} \sum_{k=1}^{N} \text{heatmap}_k
+\text{farm-heatmap} \;=\; \frac{1}{N} \sum_{k=1}^{N} \text{heatmap}_k
 $$
 
 - $N$ = number of drones  
