@@ -27,7 +27,7 @@ Each drone transforms its $512 \times 512$ mask into a small **$20 \times 20$ he
 ### Formula for Heatmap Cell $(i, j)$
 
 $$
-\text{heatmap}[i,j] \;=\; \frac{1}{255} \cdot \frac{1}{|C_{i,j}|} 
+\text{heatmap}[i,j] \;= \frac{1}{255} \cdot \frac{1}{|C_{i,j}|} 
 \sum_{(y,x) \in C_{i,j}} \text{mask}[y,x]
 $$
 
@@ -48,7 +48,7 @@ The final farm-wide map is created using **ensemble averaging**.
 ### Formula for Farm Heatmap
 
 $$
-\text{farm-heatmap} \;=\; \frac{1}{N} \sum_{k=1}^{N} \text{heatmap}_k
+\text{farm-heatmap} \;= \frac{1}{N} \sum_{k=1}^{N} \text{heatmap}_k
 $$
 
 - $N$ = number of drones  
