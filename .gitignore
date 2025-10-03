@@ -15,6 +15,7 @@ pycache/
 .streamlit/
 .ipynb_checkpoints
 /data_cache/
+__pycache__/
 .vscode/
 .idea/
 *.iml
