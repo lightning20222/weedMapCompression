@@ -30,7 +30,7 @@ pip install -r requirements.txt
 
 ### 2. Run the Dashboard
 ```bash
-streamlit run src/app/streamlit_app.py
+streamlit run src/app/streamlit.py
 ```
 
 ---
